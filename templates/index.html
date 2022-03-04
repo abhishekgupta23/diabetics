@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Diabetes Predictor</h1>
+    <form method="post">
+        <div class="form-wrapper">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <br>
+        <div class="form-wrapper">
+            <label for="Gul">Glucose</label>
+            <input type="number" name="glucose" id="gul">
+        </div>
+        <br>
+        <div class="form-wrapper">
+            <label for="Ins">Insulin</label>
+            <input type="number" name="insulin" id="Ins">
+        </div>
+        <br>
+        <div class="form-wrapper">
+            <label for="B">BMI</label>
+            <input type="number" name="bmi" id="B">
+        </div>
+        <br>
+        <button>Predict Diabetes</button>
+    </form>
+    <div>
+        <h4>Prediction for Age: {{age}} , Gulucose: {{glucose}} , Insulin: {{insulin}} , BMI: {{bmi}}</h4>
+        <h1>{{result}}</h1>
+    </div>
+</body>
+
+</html>
